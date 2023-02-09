@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"
+    <title>Cadastro</title>
+</head>
+<body>
+  
+  
+ <div>
+     <h1 id="title">Cadastro de DEVs</h1>
+     <p id="subtitulo">Complete suas informações</p>
+     <br>
+ </div>
+    
+ <form>
+    <fieldset class="grupo">
+        <div>
+            <label for="nome"><strong>Nome</strong></label>
+            <imput type="text" nome="nome" id="nome" required>
+        </div>
+
+        <div classe="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <imput type="text" nome="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+
+    <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <imput type="Email" nome="email" id="Email" required>
+    </div>
+
+    <div class="campo">
+        <label><strong>De qual lado da aplicação você desenvolve? ></strong></label>
+        <label>
+            <imput type="radio" nome="devweb" value="frontend" checked="">Front-end</imput>
+            </label>
+         <label>
+            <imput type="radio" nome="devweb" value="Backend">Back-end</imput>
+         </label> 
+         <label>
+            <imput type="radio" nome="devweb" value="fullstack">Fullstack</imput>
+            </label>
+    </div>
+
+    <div>
+        <label for="senioridade"><strong> Seniordade:></strong></label>
+        <select id="senioridade">
+            <option selected disabled value="">Escolha...</option>
+            <option>Junior</option>
+            <option>Pleno</option>
+            <option>Senior</option>
+        </select>
+    </div>
+  <fieldset class="grupo">
+    <div id="checkbox">
+        <Label><strong> Selecione as tecnologias que ultiliza:</strong></Label><br><br>
+        <imput type="checkbox" id="tecnologia1" nome="tecnologia1" value="HTML"></imput>
+        <label for="tecnologia1" >HTML</label>
+        <imput type="checkbox" id="tecnologia2" nome="tecnologia2" value="CSS"></imput>
+        <label for="tecnologia2" >CSS</label>
+        <imput type="checkbox" id="tecnologia3" nome="tecnologia3" value="Python"></imput>
+        <label for="tecnologia3" >Python</label>
+        <imput type="checkbox" id="tecnologia4" nome="tecnologia4" value="Java"></imput>
+        <label for="tecnologia4" >Java</label>
+        <imput type="checkbox" id="tecnologia5" nome="tecnologia5" value="JavaScript"></imput>
+        <label for="tecnologia5" >JavaScript</label>
+    </div>
+  </fieldset>
+  <div>
+    <label>Fale um pouco sobre você:</label>
+    <textarea row="6" style="width: 26em" id="você" nomr="você"></textarea>
+  </div>
+
+<button class="button" type="submit">Concluido</button>
+
+ </form>
+
+</body>
+</html>
